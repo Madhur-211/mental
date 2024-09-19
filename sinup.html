@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get It for Free</title>
+  <link rel="stylesheet" href="sinup.css">
+</head>
+<body>
+
+  <header>
+    <h1>Get It for Free</h1>
+    <p>Sign up now to get free access to our platform and start improving mental well-being.</p>
+  </header>
+
+  <main>
+    <section class="signup-form">
+      <form action="submit-signup.php" method="post">
+        
+        <!-- User Name Input -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <!-- Email Input -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <!-- Password Input -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="password">Confirm Password:</label>
+        <input type="password" id="password" name="password" required>
+
+
+        <!-- Role Selection -->
+        <label for="role">I am a:</label>
+        <select id="role" name="role" required>
+          <option value="student">Student</option>
+          <option value="caregiver">Caregiver</option>
+          <option value="health-professional">Health Professional</option>
+        </select>
+
+        <!-- Dynamic fields for additional information based on role -->
+        <div id="role-specific-fields"></div>
+
+        <!-- Submit Button -->
+        <button type="submit"><a href="./dashboard.html">Sign Up for Free</a></button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <a href="landing.html" class="cta-button">Back to Home</a>
+  </footer>
+
+  <!-- Include your JavaScript file -->
+  <script src="sinup.js"></script>
+
+</body>
+</html>

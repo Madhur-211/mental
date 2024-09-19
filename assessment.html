@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Student Dashboard for tracking mental health progress and accessing resources.">
+  <title>Assessment</title>
+  <link rel="stylesheet" href="assessment.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="stdutent .css">
+</head>
+
+<body>
+
+  <!-- Sidebar for navigation -->
+  <aside class="sidebar">
+    <div class="sidebar-header">
+        <button class="sidebar-toggle" onclick="toggleSidebar()">☰</button>
+    </div>
+    <nav class="sidebar-nav">
+      <ul>
+        <li><a href="./dashboard.html" class="active"><i class="fas fa-home"></i> Overview</a></li>
+        <li><a href="./assessment1.html"><i class="fas fa-clipboard-list"></i> Assessments</a></li>
+        <li><a href="#progress"><i class="fas fa-chart-line"></i> Progress</a></li>
+        <li><a href="./resources.html"><i class="fas fa-book"></i> Resources</a></li>
+        <li><a href="#settings"><i class="fas fa-cog"></i> Settings</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- Main Content Area -->
+  <div class="main-content">
+    <section id="overview" class="dashboard-section">
+      <!-- Cards Overview -->
+      <div class="dashboard-cards">
+        <div class="card">
+          <h2>Upcoming Assessment</h2>
+          <p>Complete your next mental health check-in.</p>
+          <a href="assessment1.html" class="btn-primary" id="A">Take Assessment</a>
+        </div>
+        <div class="card">
+          <h2>Previous Assessment</h2>
+          <p>Track your progress and see how you're improving.</p>
+          <a href="progress.html" class="btn-primary">View Progress</a>
+        </div>
+        <div class="card">
+          <h2>Assessment Result</h2>
+          <p>Feedback and Recommendations based on assessment result</p>
+          <a href="resources.html" class="btn-primary">Explore Resources</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Progress Section -->
+    <section id="progress" class="dashboard-section">
+      <h1 class="section-title">Your Progress</h1>
+      <div class="progress-content">
+        <!-- Chart Placeholder -->
+        <div id="progress-chart">
+          <p>Your mental health progress over time will be displayed here with interactive charts.</p>
+        </div>
+      </div>
+    </section>
+</body>>

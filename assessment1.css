@@ -1,0 +1,37 @@
+/* Custom styles for the mental health test page */
+
+/* Common button styles */
+.test-button {
+    background-color: #14b8a6; /* Tailwind's bg-teal-500 */
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px; /* Tailwind's rounded-full */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 4rem;
+}
+
+.test-button i {
+    margin-left: 0.5rem;
+}
+
+/* Special style for self-injury survey button */
+.self-injury-survey {
+    background-color: #6d28d9; /* Tailwind's bg-purple-700 */
+}
+
+/* Ensuring responsive design */
+@media (min-width: 768px) {
+    .test-button {
+        height: 4rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .test-button {
+        height: 4rem;
+    }
+}

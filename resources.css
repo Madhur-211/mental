@@ -1,0 +1,215 @@
+:root {
+    --teal: #008080;
+    --teal-light: #00a896;
+    --teal-dark: #004d40;
+    --gray-light: #f7f7f7;
+    --gray-dark: #2d2d2d;
+    --white: #ffffff;
+    --pink: #f3a5a0;
+    --pink-dark: #e57373;
+    --border-radius: 0.5rem;
+    --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --shadow-hover: 0 8px 16px rgba(0, 0, 0, 0.2);
+    --transition: all 0.3s ease-in-out;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--gray-light);
+    color: var(--gray-dark);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--teal-dark);
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+header nav ul {
+    display: flex;
+    gap: 1rem;
+}
+
+header nav ul li a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 700;
+    transition: color var(--transition);
+}
+
+header nav ul li a:hover {
+    color: var(--teal-light);
+}
+
+main {
+    padding: 2rem 1.5rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+    color: var(--teal-dark);
+    border-bottom: 2px solid var(--teal-light);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.bg-white {
+    background-color: var(--white);
+}
+
+.bg-teal-600 {
+    background-color: var(--teal-dark);
+}
+
+.bg-teal-500 {
+    background-color: var(--teal);
+}
+
+.bg-teal-100 {
+    background-color: var(--teal-light);
+}
+
+.bg-pink-100 {
+    background-color: var(--pink);
+}
+
+.bg-pink-500 {
+    background-color: var(--pink-dark);
+}
+
+.text-teal-500 {
+    color: var(--teal-light);
+}
+
+.text-teal-700 {
+    color: var(--teal-dark);
+}
+
+.text-white {
+    color: var(--white);
+}
+
+.card {
+    background-color: var(--white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    transition: box-shadow var(--transition), transform var(--transition);
+    overflow: hidden;
+}
+
+.card:hover {
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    color: var(--gray-dark);
+}
+
+button {
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--border-radius);
+    border: none;
+    color: var(--white);
+    cursor: pointer;
+    transition: background-color var(--transition), transform var(--transition);
+}
+
+button:hover {
+    background-color: var(--teal-light);
+    transform: scale(1.02);
+}
+
+button.bg-teal-600 {
+    background-color: var(--teal-dark);
+}
+
+button.bg-teal-500 {
+    background-color: var(--teal);
+}
+
+button.bg-pink-500 {
+    background-color: var(--pink-dark);
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--gray-dark);
+    border-radius: var(--border-radius);
+    margin-bottom: 1rem;
+    transition: border-color var(--transition);
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    border-color: var(--teal-dark);
+    outline: none;
+}
+
+footer {
+    background-color: var(--teal-dark);
+    color: var(--white);
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+}
+
+footer p {
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.grid-cols-1 {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media (min-width: 640px) {
+    .sm\:grid-cols-2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .lg\:grid-cols-3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

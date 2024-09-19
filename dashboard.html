@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="container">
+        <div id="content">
+            <div class="sidebar">
+                <div class="logo">
+                    <i class="fas fa-heart"></i>
+                    <span>Good<span>Health</span></span>
+                </div>
+                <hr>
+                <ul class="menu">
+                    <li><a href="#"> Overview</a></li>
+                    <li><a href="./assessment.html"> Assesments</a></li>
+                    <li><a href="#"> Doctors</a></li>
+                    <li><a href="./resources.html"> Resources</a></li>
+                    <li><a href="#"> Settings</a></li>
+                    <li><a href="#"> Messages</a></li>
+                    <li><a href="#"> Log Out</a></li>
+                    <!-- <li>
+                        <a href="#"> Dark Mode</a>
+                        <input type="checkbox" id="switch" class="checkbox" />
+                        <label for="switch" class="toggle"></label>
+                    </li> -->
+                </ul>
+            </div>
+            <div class="profile">
+                <div class="picture">
+                    <img src="https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?size=626&ext=jpg"
+                        alt="">
+                    <span id="t">Talan Philips</span>
+                </div>
+                <div id="bigBox">
+                    <div class="box"><span class="text1">24</span><span class="text2">Years</span></div>
+                    <div class="box"><span class="text1">A+</span><span class="text2">Blood</span></div>
+                    <div class="box"><span class="text1">187cm</span><span class="text2">Height</span></div>
+                    <div class="box"><span class="text1">91kg</span><span class="text2">Weight</span></div>
+                </div>
+            </div>
+            <!-- <div class="activity">
+                
+            </div> -->
+            <div class="progress-container">
+                <div class="progress-item">
+                    <span>General Health</span>
+                    <div class="progress-circle" data-percent="75" style="--progress-color: #ff4d4d;--percent: 75">
+                        <span>75%</span>
+                    </div>
+                </div>
+                <div class="progress-item">
+                    <span>Physical Health</span>
+                    <div class="progress-circle" data-percent="83" style="--progress-color: #1e90ff;--percent: 83">
+                        <span>83%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="graph">
+                <span>Your Mental Health Conditions</span>
+                <select id="yearDropdown">
+                    <option disabled selected>Year</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                  </select>
+                <img src="./image.png" alt="">
+            </div>
+            <div class="appointments">
+                <span>Doctor's Appointments</span>
+                <select id="monthDropdown">
+                    <option disabled selected>June</option>
+                    <option value="July">2023</option>
+                    <option value="August">2024</option>
+                    <option value="September">2025</option>
+                  </select>
+                <div class="calendar">
+                    <div class="days">
+                        <div class="day">Mo</div>
+                        <div class="day">Tu</div>
+                        <div class="day">We</div>
+                        <div class="day">Th</div>
+                        <div class="day">Fr</div>
+                        <div class="day">Sa</div>
+                        <div class="day">Su</div>
+                    </div>
+                    <div class="dates">
+                        <div class="date">01</div>
+                        <div class="date">02</div>
+                        <div class="date">03</div>
+                        <div class="date_active">04</div>
+                        <div class="date">05</div>
+                        <div class="ss">06</div>
+                        <div class="ss">07</div>
+                        <div class="date">08</div>
+                        <div class="date">09</div>
+                        <div class="date">10</div>
+                        <div class="date">11</div>
+                        <div class="date">12</div>
+                        <div class="ss">13</div>
+                        <div class="ss">14</div>
+                        <div class="date">15</div>
+                        <div class="date">16</div>
+                        <div class="date">17</div>
+                        <div class="date">18</div>
+                        <div class="date">19</div>
+                        <div class="ss">20</div>
+                        <div class="ss">21</div>
+                        <div class="date">22</div>
+                        <div class="date">23</div>
+                        <div class="date">24</div>
+                        <div class="date">25</div>
+                        <div class="date">26</div>
+                        <div class="ss">27</div>
+                        <div class="ss">28</div>
+                        <div class="date">29</div>
+                        <div class="date">30</div>
+                    </div>
+                </div>
+                <div class="lists">
+                    <div id="box-1" class="b"><span>Psychiatrist</span></div>
+                    <div id="box-2" class="b"><span>Upcoming Assesments</span></div>
+                    <div id="box-3" class="b"><span>Games</span></div>
+                    <div id="box-4" class="b"><span>Exercises</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

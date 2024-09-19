@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Depression Test</title>
+    <link rel="stylesheet" href="depression2.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <!-- Depression Test Introduction -->
+    <div class="max-w-4xl mx-auto p-8">
+        <h1 class="text-4xl font-bold text-center text-teal-600 mb-6">Depression Test</h1>
+        <div class="flex justify-center mb-8">
+            <!-- Steps Indicator -->
+            <div class="flex items-center">
+                <div class="w-8 h-8 bg-teal-600 rounded-full flex items-center justify-center text-white">
+                    <i class="fas fa-check"></i>
+                </div>
+                <span class="ml-2 text-teal-600">Test Questions</span>
+            </div>
+            <div class="flex items-center mx-2">
+                <div class="w-16 h-1 bg-teal-600"></div>
+            </div>
+            <div class="flex items-center">
+                <div class="w-8 h-8 bg-teal-600 rounded-full flex items-center justify-center text-white">
+                    <i class="fas fa-check"></i>
+                </div>
+                <span class="ml-2 text-teal-600">Optional Questions</span>
+            </div>
+            <div class="flex items-center mx-2">
+                <div class="w-16 h-1 bg-gray-300"></div>
+            </div>
+            <div class="flex items-center">
+                <div class="w-8 h-8 bg-gray-300 rounded-full flex items-center justify-center text-white">
+                    <i class="fas fa-circle"></i>
+                </div>
+                <span class="ml-2 text-gray-500">Your Results</span>
+            </div>
+        </div>
+        <p class="text-gray-700 mb-6">
+            Please take a moment to answer the following <span class="font-bold">optional</span> questions. Your answers are totally anonymous—we won't be able to identify you based on this information. Your answers help us provide better information and support for people like you.
+        </p>
+        <p class="text-gray-700 mb-6">
+            You can answer as many or as few questions as you would like. When you are done, scroll to the bottom of the survey and click "submit" to receive your screening results.
+        </p>
+        <hr class="mb-6">
+        <p class="text-gray-700 mb-4">Are you taking this test for yourself or for someone else?</p>
+        <div class="flex space-x-4 mb-8">
+            <button class="bg-gray-200 text-gray-700 py-2 px-4 rounded-full">FOR MYSELF</button>
+            <button class="bg-gray-200 text-gray-700 py-2 px-4 rounded-full">FOR SOMEONE ELSE</button>
+        </div>
+        <h2 class="text-2xl font-bold text-gray-800 mb-4">About You</h2>
+        <div class="mb-4">
+            <label class="block text-gray-700 mb-2">Age Range</label>
+            <select class="w-full p-2 border border-gray-300 rounded">
+                <option>Select your age range</option>
+                <!-- Add more options as needed -->
+            </select>
+        </div>
+        <div class="mb-4">
+            <label class="block text-gray-700 mb-2">Gender</label>
+            <div class="flex space-x-4">
+                <button class="bg-gray-200 text-gray-700 py-2 px-4 rounded-full">FEMALE</button>
+                <button class="bg-gray-200 text-gray-700 py-2 px-4 rounded-full">MALE</button>
+                <button class="bg-gray-200 text-gray-700 py-2 px-4 rounded-full">NON-BINARY</button>
+            </div>
+        </div>
+        <!-- About Your Mental Health -->
+        <h2 class="text-2xl font-semibold mb-6">About Your Mental Health</h2>
+        <p class="mb-4">Have you ever received treatment/support for a mental health problem?</p>
+        <div class="flex space-x-4 mb-6">
+            <button class="bg-gray-200 text-gray-800 py-2 px-6 rounded-full">YES</button>
+            <button class="bg-gray-200 text-gray-800 py-2 px-6 rounded-full">NO</button>
+        </div>
+        <p class="mb-4">Think about your mental health test. What are the main things contributing to your mental health problems right now?</p>
+        <p class="mb-4">Choose up to 3.</p>
+        <div class="space-y-4">
+            <label class="flex items-center space-x-3">
+                <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-600">
+                <span>Abuse or violence</span>
+            </label>
+            <label class="flex items-center space-x-3">
+                <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-600">
+                <span>Relationship problems (friends, family, or significant other)</span>
+            </label>
+            <label class="flex items-center space-x-3">
+                <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-600">
+                <span>Body image</span>
+            </label>
+            <label class="flex items-center space-x-3">
+                <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-600">
+                <span>Low self-esteem or self-image</span>
+            </label>
+            <label class="flex items-center space-x-3">
+                <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-600">
+                <span>School or work problems</span>
+            </label>
+            <label class="flex items-center space-x-3">
+                <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-600">
+                <span>Financial problems</span>
+            </label>
+            <label class="flex items-center space-x-3">
+                <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-600">
+                <span>Loneliness or isolation</span>
+            </label>
+            <label class="flex items-center space-x-3">
+                <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-600">
+                <span>Grief or loss of someone or something</span>
+            </label>
+            <label class="flex items-center space-x-3">
+                <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-600">
+                <span>Experiencing hate/bullying (including racism, homophobia, transphobia, or discrimination)</span>
+            </label>
+            <label class="flex items-center space-x-3">
+                <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-600">
+                <span>State of the world (war, climate, politics)</span>
+            </label>
+            <label class="flex items-center space-x-3">
+                <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-600">
+                <span>I don't know (something just feels wrong)</span>
+            </label>
+            <label class="flex items-center space-x-3">
+                <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-600">
+                <span>Other...</span>
+            </label>
+        </div>
+        <!-- About Your Health -->
+        <h2 class="text-2xl font-semibold mt-10 mb-6">About Your Health</h2>
+        <div class="mb-6">
+            <p class="mb-2">Do you currently have health insurance?</p>
+            <div class="flex space-x-4">
+                <button class="bg-gray-100 text-gray-800 py-2 px-6 rounded-full">YES</button>
+                <button class="bg-gray-100 text-gray-800 py-2 px-6 rounded-full">NO</button>
+            </div>
+        </div>
+        <div class="mb-6">
+            <p class="mb-2">Do you have any of the following physical health conditions? Select all that apply.</p>
+            <div class="space-y-4">
+                <label class="flex items-center">
+                    <input type="checkbox" class="form-checkbox text-teal-500 mr-2">
+                    <span>Heart disease</span>
+                </label>
+                <label class="flex items-center">
+                    <input type="checkbox" class="form-checkbox text-teal-500 mr-2">
+                    <span>Reproductive health concerns (PCOS, endometriosis, infertility, etc.)</span>
+                </label>
+                <label class="flex items-center">
+                    <input type="checkbox" class="form-checkbox text-teal-500 mr-2">
+                    <span>Diabetes</span>
+                </label>
+                <label class="flex items-center">
+                    <input type="checkbox" class="form-checkbox text-teal-500 mr-2">
+                    <span>Cancer</span>
+                </label>
+                <label class="flex items-center">
+                    <input type="checkbox" class="form-checkbox text-teal-500 mr-2">
+                    <span>Arthritis or other chronic pain</span>
+                </label>
+                <label class="flex items-center">
+                    <input type="checkbox" class="form-checkbox text-teal-500 mr-2">
+                    <span>Asthma, COPD or other lung conditions</span>
+                </label>
+                <label class="flex items-center">
+                    <input type="checkbox" class="form-checkbox text-teal-500 mr-2">
+                    <span>Movement Disorders (involuntary tics, tardive dyskinesia, etc.)</span>
+                </label>
+                <label class="flex items-center">
+                    <input type="checkbox" class="form-checkbox text-teal-500 mr-2">
+                    <span>Digestive problems (Crohn's, colitis, IBS, etc.)</span>
+                </label>
+                <label class="flex items-center">
+                    <input type="checkbox" class="form-checkbox text-teal-500 mr-2">
+                    <span>Neurological conditions (epilepsy, etc.) or traumatic brain injury (TBI)</span>
+                </label>
+                <label class="flex items-center">
+                    <input type="checkbox" class="form-checkbox text-teal-500 mr-2">
+                    <span>Other...</span>
+                </label>
+            </div>
+        </div>
+        <div class="flex justify-between mt-8">
+            <button class="bg-gray-100 text-gray-800 py-2 px-6 rounded-full flex items-center">
+                <i class="fas fa-arrow-left mr-2"></i> PREVIOUS
+            </button>
+            <button class="bg-teal-500 text-white py-2 px-6 rounded-full flex items-center"><a href="./result.html">
+                VIEW RESULTS </a><i class="fas fa-arrow-right ml-2"></i>
+            </button>
+        </div>
+    </div>
+</body>
+</html>
